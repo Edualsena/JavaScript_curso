@@ -8,7 +8,40 @@
 <body>
     <script>
         // aplicaçao calculadora dinamica.
+
+        //Queremos um numero inicial
+        // queremos um sinal (tipo de operaçao)
+        // quero um numero final
+
+        var numero1 = prompt('informa o primeiro numero...');
         
+        var sinal = prompt('escolha a operaçao');
+    
+        while(sinal != '-' && sinal != '+' && sinal != '/' && sinal != '*'){
+
+            alert('Sinal invalido!!!');
+            sinal = prompt('escolha a operaçao');
+        } 
+
+        var numeroFinal = prompt('escolha o outro numero');
+
+        numero1 = parseInt(numero1);
+        numeroFinal = parseInt(numeroFinal);
+
+        var resultadoFinal = 0;
+        if(sinal == '+'){
+            var resultadoFinal = numero1 + numeroFinal;
+        }else if(sinal == '-'){
+            var resultadoFinal = numero1 - numeroFinal;
+        }else if(sinal == '/'){
+            var resultadoFinal = numero1 / numeroFinal;
+        }else if(sinal == '*'){
+            var resultadoFinal = numero1 * numeroFinal;
+        }
+
+        alert('o resultado final é: '+resultadoFinal);
+
+
 
     </script>
 </body>
