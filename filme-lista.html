@@ -28,9 +28,9 @@
         })
 
         var titulos = document.querySelectorAll('.tituloFilme');
-        for(var i = 0; i < titulos.length,i++;){
+        for(var i = 0; i < titulos.length; i++){
             titulos[i].addEventListener('click',function(t){
-                if(t.target.querySelector('.description').style.display = "none"){
+                if(t.target.querySelector('.description').style.display == "none"){
                     t.target.querySelector('.description').style.display = "block";
                 }else{
                     t.target.querySelector('.description').style.display = "none";
